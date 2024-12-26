@@ -1,0 +1,63 @@
+{
+  "name": "fastrun",
+  "displayName": "fastrun",
+  "description": "A Visual Studio Code extension to quickly run commands from a .fastrun script file directly in the terminal. Simplify your workflow by executing predefined shell commands with a single keystroke.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:fastrun.runScript"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fastrun.runScript",
+        "title": "Run Script from .fastrun"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "fastrun.runScript",
+        "key": "cmd+shift+r",
+        "mac": "cmd+shift+r",
+        "when": "true"
+      },
+      {
+        "command": "fastrun.runScript",
+        "key": "ctrl+shift+r",
+        "windows": "ctrl+shift+r",
+        "when": "true"
+      },
+      {
+        "command": "fastrun.runScript",
+        "key": "ctrl+shift+r",
+        "linux": "ctrl+shift+r",
+        "when": "true"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
