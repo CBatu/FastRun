@@ -17,7 +17,7 @@ FastRun is a Visual Studio Code extension designed to simplify your workflow by 
 3. Search for `fastrun`.
 4. Click **Install**.
 
-Alternatively, you can install the extension manually by downloading it from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+Alternatively, you can install the extension manually by downloading it from the [Visual Studio Code Marketplace]([https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/items?itemName=FastRun.FastRun)).
 
 ## Usage
 
